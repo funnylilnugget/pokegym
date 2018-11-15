@@ -64,23 +64,23 @@
 //   }
 // // =======
 // This is the flavor text for the Pokemon
-var pokemon1 = "144";
-var pokemon2 = "257";
-var pokemon3 = "282";
-var pokemon4 = "144";
-var pokemon5 = "131";
-var pokemon6 = "130";
-var pokemon7 = "";
-var pokemon8 = "";
-var pokemon9 = "";
-var pokemon10 = "";
-var pokemon11 = "";
-var pokemon12 = "";
-var pokemon13 = "";
-var pokemon14 = "";
-var pokemon15 = "";
+var pokemon1 = ""; //
+var pokemon2 = "257"; // blaziken
+var pokemon3 = "282"; // gardevoir
+var pokemon4 = "144"; // articuno
+var pokemon5 = "131"; // lapras
+var pokemon6 = "130"; // gyarados
+var pokemon7 = "94"; // gengar
+var pokemon8 = "93"; // haunter
+var pokemon9 = "354"; //dusclops
+var pokemon10 = ""; //
+var pokemon11 = ""; //
+var pokemon12 = ""; //
+var pokemon13 = ""; //
+var pokemon14 = ""; //
+var pokemon15 = ""; //
 
-class NuggetsPokemon {
+class teamPokemon {
   constructor(name, hp, attack, defense, abilities, types, pokeId, images) {
     this.name = name;
     this.hp = hp;
@@ -116,7 +116,7 @@ function getPokemon(pokemonName) {
           pokeId = '00' + pokeId;
         }
       var images = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + pokeId + ".png";
-   let poke = new NuggetsPokemon(
+   let poke = new (
         pokeinfo.name,
         pokeinfo.stats[5]["base_stat"],
         pokeinfo.stats[4],
@@ -201,4 +201,4 @@ class Trainer {
 
 }
 
-var poketrainer = new Trainer("NuggetsPokemon", pokemon1, pokemon2, pokemon3);
+var poketrainer = new Trainer("teamPokemon", pokemon1, pokemon2, pokemon3);
