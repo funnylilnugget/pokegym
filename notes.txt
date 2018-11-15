@@ -1,1 +1,15 @@
 Gym name - undefined
+
+Front End:
+- background image
+-- name of gym
+--- name of each trainer on the left
+---- buttons with their Pokemon below them
+----- click the button and the Pokemon appears in the gym while the stats appear alongside them
+
+Back End:
+- Trainer class
+- Pokemon class
+
+
+
