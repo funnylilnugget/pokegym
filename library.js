@@ -1,73 +1,84 @@
-<<<<<<< HEAD
-var Trainer = [];
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fd1c8f77289790f6d81ab9f83d51e1a3132d38fb
-<<<<<<< HEAD
-var Trainer1 = [];
-var Trainer2 = [];
-var Trainer3 = [];
-var Trainer4 = [];
-var Trainer5 = [];
-=======
->>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
-var Trainer = [];
->>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
-=======
-
->>>>>>> JavascriptJava
->>>>>>> ecaebf7771d93ff1a907322613f7b6f0dc0819a9
-
-class Pokemon {
-  constructor(name, hp, attack, defense, ability1,images ability2) {
-    this.name= name;
-    this.hp = hp;
-    this.attack = attack;
-    this.images = images;
-    this.defense = defense;
-    this.ability1 = ability1;
-    this.ability2 = ability2;
-  }
-}
-
-
-  function getPokemon(id){
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        data = JSON.parse(this.responseText)
-        console.log(data);
-<<<<<<< HEAD
-         let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
-
-<<<<<<< HEAD
-
-         let images = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + pokemon +".png";
-=======
-        Trainer1.pokemon.push(4)
-=======
-        let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
->>>>>>> ecaebf7771d93ff1a907322613f7b6f0dc0819a9
-
-
->>>>>>> JavascriptJava
-
-      }
-
-    };
-    xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/", true);
-
-    xhttp.send();
-  }
+// <<<<<<< HEAD
+// var Trainer = [];
 // =======
+// <<<<<<< HEAD
+// <<<<<<< HEAD
+// =======
+// =======
+// >>>>>>> fd1c8f77289790f6d81ab9f83d51e1a3132d38fb
+// <<<<<<< HEAD
+// var Trainer1 = [];
+// var Trainer2 = [];
+// var Trainer3 = [];
+// var Trainer4 = [];
+// var Trainer5 = [];
+// =======
+// >>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
+// var Trainer = [];
+// >>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
+// =======
+//
+// >>>>>>> JavascriptJava
+// >>>>>>> ecaebf7771d93ff1a907322613f7b6f0dc0819a9
+//
+// class Pokemon {
+//   constructor(name, hp, attack, defense, ability1,images ability2) {
+//     this.name= name;
+//     this.hp = hp;
+//     this.attack = attack;
+//     this.images = images;
+//     this.defense = defense;
+//     this.ability1 = ability1;
+//     this.ability2 = ability2;
+//   }
+// }
+//
+//
+//   function getPokemon(id){
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function () {
+//       if (this.readyState == 4 && this.status == 200) {
+//         data = JSON.parse(this.responseText)
+//         console.log(data);
+// <<<<<<< HEAD
+//          let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
+//
+// <<<<<<< HEAD
+//
+//          let images = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + pokemon +".png";
+// =======
+//         Trainer1.pokemon.push(4)
+// =======
+//         let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
+// >>>>>>> ecaebf7771d93ff1a907322613f7b6f0dc0819a9
+//
+//
+// >>>>>>> JavascriptJava
+//
+//       }
+//
+//     };
+//     xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/", true);
+//
+//     xhttp.send();
+//   }
+// // =======
 // This is the flavor text for the Pokemon
 var pokemon1 = "144";
 var pokemon2 = "257";
 var pokemon3 = "282";
-var pokemon4 = "799";
+var pokemon4 = "144";
+var pokemon5 = "131";
+var pokemon6 = "130";
+var pokemon7 = "";
+var pokemon8 = "";
+var pokemon9 = "";
+var pokemon10 = "";
+var pokemon11 = "";
+var pokemon12 = "";
+var pokemon13 = "";
+var pokemon14 = "";
+var pokemon15 = "";
 
 class NuggetsPokemon {
   constructor(name, hp, attack, defense, abilities, types, pokeId, images) {
