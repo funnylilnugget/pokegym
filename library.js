@@ -64,7 +64,7 @@
 //   }
 // // =======
 // This is the flavor text for the Pokemon
-var pokemon1 = ""; //
+var pokemon1 = "381"; // latios
 var pokemon2 = "257"; // blaziken
 var pokemon3 = "282"; // gardevoir
 var pokemon4 = "144"; // articuno
@@ -73,9 +73,9 @@ var pokemon6 = "130"; // gyarados
 var pokemon7 = "94"; // gengar
 var pokemon8 = "93"; // haunter
 var pokemon9 = "354"; //dusclops
-var pokemon10 = ""; //
-var pokemon11 = ""; //
-var pokemon12 = ""; //
+var pokemon10 = "330"; // flygon
+var pokemon11 = "719"; // diancie
+var pokemon12 = "708"; // phantump
 var pokemon13 = ""; //
 var pokemon14 = ""; //
 var pokemon15 = ""; //
