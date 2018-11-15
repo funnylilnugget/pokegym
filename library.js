@@ -1,11 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> fd1c8f77289790f6d81ab9f83d51e1a3132d38fb
+<<<<<<< HEAD
 var Trainer1 = [];
 var Trainer2 = [];
 var Trainer3 = [];
 var Trainer4 = [];
 var Trainer5 = [];
 =======
+>>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
 var Trainer = [];
 >>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
 =======
@@ -48,7 +53,11 @@ class Pokemon {
     xhttp.send();
   }
 <<<<<<< HEAD
+// =======
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
 // This is the flavor text for the Pokemon
 
 function pokemonBio(pokemon) {
@@ -73,4 +82,8 @@ function pokemonBio(pokemon) {
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon-species/" + pokemon + "/", true);
   xhttp.send();
 }
+<<<<<<< HEAD
+// >>>>>>> 20e79df4ad450ec4d3c4ec6ca8ae5eac25dce6a3
+=======
 >>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
+>>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
