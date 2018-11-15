@@ -1,1 +1,14 @@
 Gym name - undefined
+
+Front End:
+- background image
+-- name of gym
+--- name of each trainer
+---- their Pokemon next to/below them
+
+Back End:
+- Trainer class
+- Pokemon class
+
+
+
