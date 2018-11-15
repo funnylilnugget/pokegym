@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Trainer1 = [];
 var Trainer2 = [];
 var Trainer3 = [];
@@ -7,6 +8,9 @@ var Trainer5 = [];
 =======
 var Trainer = [];
 >>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
+=======
+
+>>>>>>> JavascriptJava
 
 class Pokemon {
   constructor(name, hp, attack, defense, ability1, ability2) {
@@ -20,23 +24,27 @@ class Pokemon {
 }
 
 
-
-
   function getPokemon(id){
     var xhttp = new XMLHttpRequest();
-     xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
         data = JSON.parse(this.responseText)
         console.log(data);
+<<<<<<< HEAD
          let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
 
         Trainer1.pokemon.push(4)
+=======
+        let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
 
+        
+>>>>>>> JavascriptJava
 
-        }
+      }
 
     };
     xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/", true);
+
     xhttp.send();
   }
 <<<<<<< HEAD
