@@ -1,21 +1,11 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-var Trainer1 = [];
-var Trainer2 = [];
-var Trainer3 = [];
-var Trainer4 = [];
-var Trainer5 = [];
-=======
->>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
 var Trainer = [];
->>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
 
 class Pokemon {
-  constructor(name, hp, attack, defense, ability1, ability2) {
+  constructor(name, hp, attack, defense, ability1,images ability2) {
     this.name= name;
     this.hp = hp;
     this.attack = attack;
+    this.images = images;
     this.defense = defense;
     this.ability1 = ability1;
     this.ability2 = ability2;
@@ -33,7 +23,8 @@ class Pokemon {
         console.log(data);
          let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
 
-        Trainer1.pokemon.push(4)
+
+         let images = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + pokemon +".png";
 
 
         }
@@ -42,12 +33,7 @@ class Pokemon {
     xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/", true);
     xhttp.send();
   }
-<<<<<<< HEAD
 // =======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
 // This is the flavor text for the Pokemon
 
 function pokemonBio(pokemon) {
@@ -72,8 +58,4 @@ function pokemonBio(pokemon) {
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon-species/" + pokemon + "/", true);
   xhttp.send();
 }
-<<<<<<< HEAD
 // >>>>>>> 20e79df4ad450ec4d3c4ec6ca8ae5eac25dce6a3
-=======
->>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
->>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
