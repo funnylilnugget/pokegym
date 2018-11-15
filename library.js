@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 var Trainer = [];
 
 class Pokemon {
@@ -33,7 +31,7 @@ class Pokemon {
     xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/", true);
     xhttp.send();
   }
-=======
+// =======
 // This is the flavor text for the Pokemon
 
 function pokemonBio(pokemon) {
@@ -58,4 +56,4 @@ function pokemonBio(pokemon) {
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon-species/" + pokemon + "/", true);
   xhttp.send();
 }
->>>>>>> 20e79df4ad450ec4d3c4ec6ca8ae5eac25dce6a3
+// >>>>>>> 20e79df4ad450ec4d3c4ec6ca8ae5eac25dce6a3
