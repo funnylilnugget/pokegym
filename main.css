@@ -2,3 +2,9 @@ body{
   background-image:url("image/pokegym.png");
   background-size: cover;
 }
+
+.modal-body {
+  height: 300px;
+  width: 800px;
+  background-color: white;
+}

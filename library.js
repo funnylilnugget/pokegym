@@ -1,4 +1,25 @@
+<<<<<<< HEAD
 var Trainer = [];
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> fd1c8f77289790f6d81ab9f83d51e1a3132d38fb
+<<<<<<< HEAD
+var Trainer1 = [];
+var Trainer2 = [];
+var Trainer3 = [];
+var Trainer4 = [];
+var Trainer5 = [];
+=======
+>>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
+var Trainer = [];
+>>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
+=======
+
+>>>>>>> JavascriptJava
+>>>>>>> ecaebf7771d93ff1a907322613f7b6f0dc0819a9
 
 class Pokemon {
   constructor(name, hp, attack, defense, ability1,images ability2) {
@@ -13,24 +34,32 @@ class Pokemon {
 }
 
 
-
-
   function getPokemon(id){
     var xhttp = new XMLHttpRequest();
-     xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
         data = JSON.parse(this.responseText)
         console.log(data);
+<<<<<<< HEAD
          let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
 
+<<<<<<< HEAD
 
          let images = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + pokemon +".png";
+=======
+        Trainer1.pokemon.push(4)
+=======
+        let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
+>>>>>>> ecaebf7771d93ff1a907322613f7b6f0dc0819a9
 
+        
+>>>>>>> JavascriptJava
 
-        }
+      }
 
     };
     xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + id + "/", true);
+
     xhttp.send();
   }
 // =======
