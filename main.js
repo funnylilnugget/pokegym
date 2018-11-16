@@ -1,15 +1,24 @@
+// trainer:
 var pokemon1 = 708;
 var pokemon2 = 330;
 var pokemon3 = 718;
-var pokemon4 = 345;
-var pokemon5 = 545;
-var pokemon6 = 64;
+
+// trainer:
+var pokemon4 = 144;
+var pokemon5 = 131;
+var pokemon6 = 130;
+
+// trainer:
 var pokemon7 = 381;
 var pokemon8 = 257;
 var pokemon9 = 282;
+
+// trainer:
 var pokemon10= 133;
 var pokemon11 = 132;
 var pokemon12= 6;
+
+// trainer:
 var pokemon13 = 356;
 var pokemon14 = 94;
 var pokemon15= 93;
