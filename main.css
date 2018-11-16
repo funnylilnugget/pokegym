@@ -4,8 +4,8 @@ body{
   height: 1000px;
 }
 
-<<<<<<< HEAD
-=======
+/* <<<<<<< HEAD
+======= */
 .enter {
   width: 100px;
   height: 100px;
@@ -17,7 +17,7 @@ body{
   height: auto;
   display: none;
 }
->>>>>>> styling
+/* >>>>>>> styling */
 /* .container-fluid{
   background-image:url("image/pokegym.png");
   background-size: cover;
@@ -35,18 +35,18 @@ text-align: center;
 }
 
 .modal-body {
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
   font-size: 25px;
-=======
->>>>>>> styling
+/* ======= */
+/* >>>>>>> styling */
  background-image: url("image/pokebackground.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 800px;
-<<<<<<< HEAD
-=======
+/* <<<<<<< HEAD */
+/* ======= */
   height: 900px;
->>>>>>> styling
+/* >>>>>>> styling */
   border-radius: 30%;
   height: 900px;
 }
@@ -68,13 +68,13 @@ ul{
     align-items: center;
   }
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 #stats{
   font-family: VT323;
 }
-=======
->>>>>>> styling
+/* ======= */
 .pokeball1{
+  /* >>>>>>> styling */
   height: 40px;
   width: auto;
   animation: shake linear 1s;
@@ -126,11 +126,11 @@ ul{
 
 
 
-
+/*
 =======
 }
 
->>>>>>> styling
+>>>>>>> styling */
 @keyframes shake{
   0% {
     transform:  translate(0px,0px)  ;
