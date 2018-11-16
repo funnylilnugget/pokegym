@@ -108,7 +108,7 @@ function pokeInf (pokemon) {
 }
 
 var trainer = new Trainer ("Bonny", pokemon1, pokemon2, pokemon3);
-var trainer2 = new Trainer("keiry", pokemon4, pokemon5, pokemon6);
+var trainer2 = new Trainer("keri", pokemon4, pokemon5, pokemon6);
 var trainer3 = new Trainer("kenny", pokemon7, pokemon8, pokemon9);
 var trainer4 = new Trainer("jason", pokemon10, pokemon11, pokemon12);
 var trainer5 = new Trainer("chris", pokemon13, pokemon14, pokemon15);
