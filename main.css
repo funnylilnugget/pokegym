@@ -42,7 +42,10 @@ ul{
   animation: shake linear 1s;
   animation-iteration-count:1s;
   transform-origin: 50% 50%;
+  padding-top: 8px;
 }
+
+
 
 @keyframes shake{
   0% {
