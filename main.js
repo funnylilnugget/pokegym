@@ -156,7 +156,7 @@ let hp = document.querySelector(".hp");
 let attack = document.querySelector(".attack");
 let defense = document.querySelector(".defense");
 let type = document.querySelector(".type");
-let abilities = document.querySelector(".abilities");
+let abilities = document.getElementById("abilities");
 let text = document.querySelector(".text");
 
 
