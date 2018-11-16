@@ -1,5 +1,3 @@
-// <<<<<<< HEAD
-// =======
 let isDivHidden = true;
 let revealButton = document.querySelector('.btn');
 let toggleDiv = document.querySelector('.invisible');
@@ -153,20 +151,19 @@ let images = document.querySelector(".pokeImage");
 let name = document.querySelector(".name");
 let id = document.querySelector(".id");
 let hp = document.querySelector(".hp");
-let attack = document.querySelector(".attack");
-let defense = document.querySelector(".defense");
+let pokeAttack = document.getElementById("pokeAttack");
+let pokeDefense = document.getElementById("pokeDefense");
 let type = document.querySelector(".type");
 let abilities = document.querySelector(".abilities");
 let text = document.querySelector(".text");
-
 
 function displayStats(pokemon) {
   images.src = pokemon.images;
   name.innerText = pokemon.name.toUpperCase();
   id.innerText = pokemon.id;
   hp.innerText = pokemon.hp;
-  attack.innerText = pokemon.attack;
-  defense.innerText = pokemon.defense;
+  pokeAttack.innerText = pokemon.attack;
+  pokeDefense.innerText = pokemon.defense;
   type.innerText = pokemon.type;
   abilities.innerText = pokemon.abilities;
 

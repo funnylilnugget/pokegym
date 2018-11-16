@@ -17,11 +17,7 @@ body{
   height: auto;
   display: none;
 }
-/* >>>>>>> styling */
-/* .container-fluid{
-  background-image:url("image/pokegym.png");
-  background-size: cover;
-} */
+
 .logo {
 text-align: center;
 }
@@ -30,23 +26,21 @@ text-align: center;
   margin-top: 50px;
 }
 .pokeImage{
-  height: 500px;
-  width: 500px;
+  height: 350px;
+  width: 350px;
+}
+p {
+  text-align: center;
 }
 
 .modal-body {
-/* <<<<<<< HEAD */
+
   font-size: 25px;
-/* ======= */
-/* >>>>>>> styling */
  background-image: url("image/pokebackground.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 800px;
-/* <<<<<<< HEAD */
-/* ======= */
   height: 900px;
-/* >>>>>>> styling */
   border-radius: 30%;
   height: 900px;
 }
@@ -54,9 +48,17 @@ text-align: center;
 ul{
   list-style-type: none;
   font-size: 25px;
+  padding-right: 10%;
 }
+
+
 #stats {
-  font-family: 'VT323';
+  font-family: VT323;
+}
+
+#bioInfo {
+  font-family: VT323;
+  font-size: 0.8em;
 }
 .main-page {
     height: 1000px;
@@ -68,13 +70,21 @@ ul{
     align-items: center;
   }
 
-/* <<<<<<< HEAD */
 #stats{
   font-family: VT323;
 }
+<<<<<<< HEAD
+#bioSize {
+  width: 200px;
+}
+.text {
+  font-size: 1.3em;
+}
+
 /* ======= */
+=======
+>>>>>>> 7e84fcbbc64bcec21fa9b28772c3d055d123847b
 .pokeball1{
-  /* >>>>>>> styling */
   height: 40px;
   width: auto;
   animation: shake linear 1s;
@@ -88,7 +98,6 @@ ul{
   animation: shake linear 1s;
   animation-iteration-count:1s;
   transform-origin: 50% 50%;
-<<<<<<< HEAD
   padding-top: 8px;
 }
 
@@ -111,18 +120,8 @@ ul{
     color:green;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+<<<<<<< HEAD
+=======
 
 
 
@@ -131,6 +130,7 @@ ul{
 }
 
 >>>>>>> styling */
+>>>>>>> b25de501f5a6eb45cb8aa22840afeb734abb186e
 @keyframes shake{
   0% {
     transform:  translate(0px,0px)  ;
@@ -166,27 +166,6 @@ ul{
     transform:  translate(0px,0px)  ;
   }
 }
-
-/* .row{
-
-  animation: animationFrames ease 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards;
-}
-
-@keyframes animationFrames{
-  0% {
-    opacity:0;
-    transform:  translate(0px,-25px)  ;
-  }
-  100% {
-    opacity:1;
-    transform:  translate(0px,0px)  ;
-  }
-} */
-
-
 
 .trainerImg {
   height: 150px;
