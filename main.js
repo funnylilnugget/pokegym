@@ -157,7 +157,6 @@ let type = document.querySelector(".type");
 let abilities = document.querySelector(".abilities");
 let text = document.querySelector(".text");
 
-
 function displayStats(pokemon) {
   images.src = pokemon.images;
   name.innerText = pokemon.name.toUpperCase();
