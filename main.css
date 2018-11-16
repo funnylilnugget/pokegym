@@ -30,8 +30,11 @@ text-align: center;
   margin-top: 50px;
 }
 .pokeImage{
-  height: 500px;
-  width: 500px;
+  height: 350px;
+  width: 350px;
+}
+p {
+  text-align: center;
 }
 
 .modal-body {
@@ -54,9 +57,17 @@ text-align: center;
 ul{
   list-style-type: none;
   font-size: 25px;
+  padding-right: 10%;
 }
+
+
 #stats {
-  font-family: 'VT323';
+  font-family: VT323;
+}
+
+#bioInfo {
+  font-family: VT323;
+  font-size: 0.8em;
 }
 .main-page {
     height: 1000px;
@@ -72,6 +83,13 @@ ul{
 #stats{
   font-family: VT323;
 }
+#bioSize {
+  width: 200px;
+}
+.text {
+  font-size: 1.3em;
+}
+
 /* ======= */
 .pokeball1{
   /* >>>>>>> styling */
