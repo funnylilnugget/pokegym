@@ -31,12 +31,6 @@ class Pokemon {
 
         Trainer1.pokemon.push(4)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> JavascriptJava
->>>>>>> df93dc283cf33f4087751e9505db42b5268e180f
-
         }
 
     };
@@ -144,34 +138,3 @@ function pokemonBio(pokemon) {
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon-species/" + pokemon + "/", true);
   xhttp.send();
 }
-<<<<<<< HEAD
-=======
-
-// For the scope of the Trainer all/get stuff
-
-
-
-class Trainer {
-  constructor(name) {
-    this.name = name;
-    this.pokemon = [];
-  }
-
-  all() {
-    console.log(this.pokemon);
-  }
-
-  get(name) {
-    var i = 0;
-    for(i in this.pokemon.length)
-    if(name == this.pokemon[i].name) {
-      i++;
-      console.log(this.pokemon[i]);
-      break;
-    }
-  }
-
-}
-
-var poketrainer = new Trainer("NuggetsPokemon", pokemon1, pokemon2, pokemon3);
->>>>>>> df93dc283cf33f4087751e9505db42b5268e180f
