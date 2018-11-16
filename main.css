@@ -144,3 +144,7 @@ ul{
   -webkit-animation-name: rollIn;
   animation-name: rollIn;
 }
+
+footer {
+  font-size: 10px;
+}
