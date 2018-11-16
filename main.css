@@ -17,11 +17,7 @@ body{
   height: auto;
   display: none;
 }
-/* >>>>>>> styling */
-/* .container-fluid{
-  background-image:url("image/pokegym.png");
-  background-size: cover;
-} */
+
 .logo {
 text-align: center;
 }
@@ -35,18 +31,13 @@ text-align: center;
 }
 
 .modal-body {
-/* <<<<<<< HEAD */
+
   font-size: 25px;
-/* ======= */
-/* >>>>>>> styling */
  background-image: url("image/pokebackground.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 800px;
-/* <<<<<<< HEAD */
-/* ======= */
   height: 900px;
-/* >>>>>>> styling */
   border-radius: 30%;
   height: 900px;
 }
@@ -68,13 +59,10 @@ ul{
     align-items: center;
   }
 
-/* <<<<<<< HEAD */
 #stats{
   font-family: VT323;
 }
-/* ======= */
 .pokeball1{
-  /* >>>>>>> styling */
   height: 40px;
   width: auto;
   animation: shake linear 1s;
@@ -88,7 +76,6 @@ ul{
   animation: shake linear 1s;
   animation-iteration-count:1s;
   transform-origin: 50% 50%;
-<<<<<<< HEAD
   padding-top: 8px;
 }
 
@@ -111,26 +98,6 @@ ul{
     color:green;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-=======
-}
-
->>>>>>> styling */
 @keyframes shake{
   0% {
     transform:  translate(0px,0px)  ;
@@ -166,27 +133,6 @@ ul{
     transform:  translate(0px,0px)  ;
   }
 }
-
-/* .row{
-
-  animation: animationFrames ease 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards;
-}
-
-@keyframes animationFrames{
-  0% {
-    opacity:0;
-    transform:  translate(0px,-25px)  ;
-  }
-  100% {
-    opacity:1;
-    transform:  translate(0px,0px)  ;
-  }
-} */
-
-
 
 .trainerImg {
   height: 150px;

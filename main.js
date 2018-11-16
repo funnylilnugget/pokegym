@@ -1,5 +1,3 @@
-// <<<<<<< HEAD
-// =======
 let isDivHidden = true;
 let revealButton = document.querySelector('.btn');
 let toggleDiv = document.querySelector('.invisible');
@@ -68,7 +66,7 @@ class Pokemons {
 }
 class Info {
   constructor(text){
-    this.text = text
+    this.text = text;
   }
 }
 
@@ -112,13 +110,8 @@ function getPokemon(pokemon) {
     }
     var abilities =  data["abilities"][0]["ability"]["name"];
     // console.log(abilities);
-<<<<<<< HEAD
-    let pokemons = new Pokemons(name,hp,attack,defense,id,images,types,abilities);
-    // console.log(pokemons);
-=======
     let pokemons = new Pokemons(name,hp,attack,defense,id,images,types,abilities,text);
     console.log(pokemons);
->>>>>>> 1ac5aaa0502d21c335d52740db6b69e278aeda16
     displayStats(pokemons)
 }
 };
@@ -132,13 +125,15 @@ function pokeInf (pokemon) {
   xhttp.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200) {
       data = JSON.parse(this.responseText);
+      console.log(data);
       for (i in data["flavor_text_entries"]) {
+                // console.log(data[i]);
                 if (data['flavor_text_entries'][(i)]['language']['name'] == 'en'){
-                  var info= data['flavor_text_entries'][(i)]['flavor_text'];
+                  var text= data['flavor_text_entries'][(i)]['flavor_text'];
                 }
               }
 
-      let description = new Info(info);
+      let description = new Info(text);
       displayText(description);
 }
 };
@@ -160,6 +155,7 @@ let attack = document.querySelector(".attack");
 let defense = document.querySelector(".defense");
 let type = document.querySelector(".type");
 let abilities = document.querySelector(".abilities");
+let text = document.querySelector(".text");
 
 
 function displayStats(pokemon) {
@@ -171,16 +167,33 @@ function displayStats(pokemon) {
   defense.innerText = pokemon.defense;
   type.innerText = pokemon.type;
   abilities.innerText = pokemon.abilities;
-  // text.innerHTML = pokemon.info;
-  // console.log(pokemon.info);
 
 }
-// let description = new Info(text);
-// displayText(description);
-// }
+function displayText(pokemon){
+  text.innerHTML = pokemon.text;
+}
 
-function displayText(text){
-  let text = document.querySelector(".text");
-  text.innerHTML = pokemon.info;
-  console.log(pokemon.info);
+// Code for flavor text
+
+function pokemonBio(pokemon) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+      data = JSON.parse(this.responseText);
+      for (i in data["flavor_text_entries"]) {
+          if (data['flavor_text_entries'][(i)]['language']['name'] == 'en'){
+          var infos = data['flavor_text_entries'][(i)]['flavor_text'];
+        }
+    let poke = new PokemonData(data.infos);
+    }
+      let node = document.createElement('p');
+        node.innerHTML = "<center><b>Bio:</b></center>" + infos;
+        document.getElementById('pokebio').appendChild(node);
+        node.style.background = "rgb(217, 217, 217, .4)";
+        node.style.borderRadius = "25px";
+        node.style.padding = "20px";
+    }
+  };
+  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon-species/" + pokemon + "/", true);
+  xhttp.send();
 }
