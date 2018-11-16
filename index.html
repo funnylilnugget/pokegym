@@ -11,14 +11,20 @@
 <!-- I believe there's another line that needs to go here in order to successfully use bootstrap. - Keri -->
 
     <title>undefined Pokemon Gym</title>
-
 <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
   </head>
-  <body>
 
+  <div class="visible">
+  <div class="main-page">
+        <img class="enter" src='image/pokeball.gif'>
+        <button type="button" class="btn btn-outline-light btn-xl">View The Trainers !</button>
+  </div>
+</div>
+  <!-- <body> -->
+<div class ="invisible">
 <!-- Header -->
 <div class= "logo">
 <img src="image/POKEMON-GYM.png">
@@ -31,6 +37,7 @@
 <!-- First column -- trainers -->
 
 <div class="col-lg-1 offset-lg-1">
+  <h2> Bonny </h2>
         <div id="bonny">
           <img src="image/male_trainer2.png" class="trainerImg">
 
@@ -40,7 +47,8 @@
       <br>
 
 <div class="col-lg-1 offset-lg-1">
-        <div id="keri">
+  <h2> Kery </h2>
+      <div id="keri">
           <img src="image/female_trainer.png" class="trainerImg">
         </div>
       </div>
@@ -48,6 +56,7 @@
     <br>
 
 <div class="col-lg-1 offset-lg-1">
+  <h2> Kenny </h2>
         <div id="kenny">
           <img src="image/female_trainer2.png" class="trainerImg">
         </div>
@@ -56,7 +65,8 @@
     <br>
 
 <div class="col-lg-1 offset-lg-1">
-        <div id="jason">
+  <h2> Jason </h2>
+          <div id="jason">
           <img src="image/male_trainer3.png" class="trainerImg">
         </div>
         </div>
@@ -64,6 +74,7 @@
     <br>
 
 <div class="col-lg-1 offset-lg-1">
+  <h2> Chris </h2>
         <div id="chris">
           <img src="image/male_trainer.png" class="trainerImg">
         </div>
@@ -74,9 +85,15 @@
       <div class="row">
         <div class="col-lg-1 offset-lg-1">
                 <div id="bonnyPoke">
+<<<<<<< HEAD
                   <img src="image/pokeball1.png" class="pokeball1" onclick="getPokemon(151)" data-toggle="modal" data-target="#myModal"></img>
                   <img src="image/pokeball1.png" class="pokeball1" onclick="getPokemon(149)" data-toggle="modal" data-target="#myModal"></img>
                   <img src="image/pokeball1.png" class="pokeball1" onclick="getPokemon(150)" data-toggle="modal" data-target="#myModal"></img>
+=======
+                  <img src="image/pokeball1.png" class="pokeball1" onclick="getPokemon(151); pokeInf(151)" data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball1.png" class="pokeball1" onclick="getPokemon(149); pokeInf(149)" data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball1.png" class="pokeball1" onclick="getPokemon(150); pokeInf(150)" data-toggle="modal" data-target="#myModal"></img>
+>>>>>>> styling
                 </div>
               </div>
 
@@ -84,9 +101,9 @@
 
         <div class="col-lg-1 offset-lg-1">
                 <div id="keriPoke">
-                  <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(120)" data-toggle="modal" data-target="#myModal"></img>
-                  <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(200)" data-toggle="modal" data-target="#myModal"></img>
-                  <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(309)" data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(144); pokeInf(144s)" data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(131); pokeInf(131)" data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(130); pokeInf(130)" data-toggle="modal" data-target="#myModal"></img>
                 </div>
               </div>
 
@@ -94,9 +111,9 @@
 
         <div class="col-lg-1 offset-lg-1">
                 <div id="kennyPoke">
-                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(381)"data-toggle="modal" data-target="#myModal"></img>
-                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(257)"data-toggle="modal" data-target="#myModal"></img>
-                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(282)"  data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(381); pokeInf(381)"data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(257); pokeInf(257)"data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(282); pokeInf(282)"  data-toggle="modal" data-target="#myModal"></img>
                 </div>
               </div>
 
@@ -104,9 +121,9 @@
 
         <div class="col-lg-1 offset-lg-1">
                 <div id="jasonPoke">
-                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(133)"data-toggle="modal" data-target="#myModal"></img>
-                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(132)"data-toggle="modal" data-target="#myModal"></img>
-                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(6)"  data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(133); pokeInf(133)"data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(132); pokeInf(132)"data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(239); pokeInf(239)"  data-toggle="modal" data-target="#myModal"></img>
                 </div>
                 </div>
 
@@ -114,9 +131,15 @@
 
         <div class="col-lg-1 offset-lg-1">
                 <div id="chrisPoke">
+<<<<<<< HEAD
                   <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(356)" data-toggle="modal" data-target="#myModal"></img>
                   <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(94)" data-toggle="modal" data-target="#myModal"></img>
                   <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(93)"  data-toggle="modal" data-target="#myModal"></img>
+=======
+                  <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(356); pokeInf(356)" data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs"onclick="getPokemon(772); pokeInf(772)" data-toggle="modal" data-target="#myModal"></img>
+                  <img src="image/pokeball.png" class="pokeballs" onclick="getPokemon(201); pokeInf(201)"  data-toggle="modal" data-target="#myModal"></img>
+>>>>>>> styling
                 </div>
               </div>
 
@@ -171,7 +194,7 @@
 
 
 
-
+</div>
 
 
 <!-- Footer -->
