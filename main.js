@@ -1,5 +1,3 @@
-// <<<<<<< HEAD
-// =======
 let isDivHidden = true;
 let revealButton = document.querySelector('.btn');
 let toggleDiv = document.querySelector('.invisible');
