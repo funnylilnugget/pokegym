@@ -1,3 +1,20 @@
+// <<<<<<< HEAD
+// =======
+let isDivHidden = true;
+let revealButton = document.querySelector('.btn');
+let toggleDiv = document.querySelector('.invisible');
+let toggleDiv1 = document.querySelector('.visible');
+//pokeball
+revealButton.addEventListener('click', function () {
+    if (isDivHidden === true) {
+        toggleDiv.classList.remove('invisible');
+        isDivHidden = false;
+        toggleDiv1.classList.add('invisible');
+    }
+});
+
+
+// >>>>>>> styling
 // trainer: Bonny
 var pokemon1 = 708;
 var pokemon2 = 330;
@@ -16,12 +33,21 @@ var pokemon9 = 282;
 // trainer: Jason
 var pokemon10= 133;
 var pokemon11 = 132;
+// <<<<<<< HEAD
 var pokemon12= 6;
 
 // trainer: Chris
 var pokemon13 = 356;
 var pokemon14 = 94;
 var pokemon15= 93;
+// =======
+var pokemon12= 239;
+
+// trainer: Chris
+var pokemon13 = 356;
+var pokemon14 = 772;
+var pokemon15=201;
+// >>>>>>> styling
 // var pokemon1 = [];
 
 
@@ -86,8 +112,13 @@ function getPokemon(pokemon) {
     }
     var abilities =  data["abilities"][0]["ability"]["name"];
     // console.log(abilities);
+<<<<<<< HEAD
     let pokemons = new Pokemons(name,hp,attack,defense,id,images,types,abilities);
     // console.log(pokemons);
+=======
+    let pokemons = new Pokemons(name,hp,attack,defense,id,images,types,abilities,text);
+    console.log(pokemons);
+>>>>>>> 1ac5aaa0502d21c335d52740db6b69e278aeda16
     displayStats(pokemons)
 }
 };
