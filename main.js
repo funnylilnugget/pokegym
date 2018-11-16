@@ -1,6 +1,6 @@
-var pokemon1 = 708;
-var pokemon2 = 330;
-var pokemon3 = 718;
+var pokemon1 = 151;
+var pokemon2 = 150;
+var pokemon3 = 145;
 var pokemon4 = 345;
 var pokemon5 = 545;
 var pokemon6 = 64;
@@ -12,7 +12,7 @@ var pokemon11 = 132;
 var pokemon12= 6;
 var pokemon13 = 356;
 var pokemon14 = 94;
-var pokemon15= 282;
+var pokemon15= 93;
 // var pokemon1 = [];
 
 
