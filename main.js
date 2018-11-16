@@ -1,24 +1,24 @@
-// trainer:
+// trainer: Bonny
 var pokemon1 = 708;
 var pokemon2 = 330;
 var pokemon3 = 718;
 
-// trainer:
+// trainer: Keri
 var pokemon4 = 144;
 var pokemon5 = 131;
 var pokemon6 = 130;
 
-// trainer:
+// trainer: Kenny
 var pokemon7 = 381;
 var pokemon8 = 257;
 var pokemon9 = 282;
 
-// trainer:
+// trainer: Jason
 var pokemon10= 133;
 var pokemon11 = 132;
 var pokemon12= 6;
 
-// trainer:
+// trainer: Chris
 var pokemon13 = 356;
 var pokemon14 = 94;
 var pokemon15= 93;
