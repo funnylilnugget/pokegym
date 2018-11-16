@@ -1,49 +1,59 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fd1c8f77289790f6d81ab9f83d51e1a3132d38fb
-<<<<<<< HEAD
-var Trainer1 = [];
-var Trainer2 = [];
-var Trainer3 = [];
-var Trainer4 = [];
-var Trainer5 = [];
-=======
->>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
-var Trainer = [];
->>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
-=======
 
->>>>>>> JavascriptJava
 
 class Pokemon {
-  constructor(name, hp, attack, defense, ability1, ability2) {
+  constructor(name, hp, attack, defense, abilities) {
     this.name= name;
     this.hp = hp;
     this.attack = attack;
     this.defense = defense;
-    this.ability1 = ability1;
-    this.ability2 = ability2;
+    this.abilities = abilities;
+  }
+
+}
+class Trainer{
+  constructor(){
+    this.pokemon = [];
+
   }
 }
 
+var Bason = new Trainer();
+var Kari = new Trainer();
+var Bonny = new Trainer();
+var Chris = new Trainer();
+var Kenny = new Trainer();
 
+let BasonID = [001,002,003];
+let KariID = [144,141,143];
+let BonnyID = [719, 708, 330];
+let ChrisID = [356, ];
+let KennyID = [144, 257, 282];
+
+for (let i =0; i<BasonID.length; i++) {
+  getPokemon(BasonID[i]);
+
+
+  }
+}
   function getPokemon(id){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         data = JSON.parse(this.responseText)
         console.log(data);
-<<<<<<< HEAD
-         let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
 
-        Trainer1.pokemon.push(4)
-=======
-        let pokemon = new Pokemon(data['name'],data.stats[5].base_stat,data.stats[4].base_stat,data.stats[3].base_stat,data.abilities[0].ability.name, data.abilities[1].ability.name);
+        let pokemon = new Pokemon(data['name'],data['stats'][5]['base_stat'],data['stats'][4]['base_stat'],data['stats'][3]['base_stat'],data['abilities']);
 
-        
->>>>>>> JavascriptJava
+        Bason.pokemon.push(pokemon);
+        Kari.pokemon.push(pokemon);
+
+
+
+        // Bason.pokemon.push(pokemon);
+        // Kari.pokemon.push(pokemon);
+        // Bonny.pokemon.push(pokemon);
+        // Chris.pokemon.push(pokemon);
+        // Kenny.pokemon.push(pokemon);
 
       }
 
@@ -52,13 +62,18 @@ class Pokemon {
 
     xhttp.send();
   }
-<<<<<<< HEAD
-// =======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
-// This is the flavor text for the Pokemon
+
+
+
+  function getStats(number_of_pokemon_in_array) {switch(Bason)
+  {
+
+    let name = Bason.pokemon[1]['name'];
+
+  }
+
+
+
 
 function pokemonBio(pokemon) {
     var xhttp = new XMLHttpRequest();
@@ -82,8 +97,9 @@ function pokemonBio(pokemon) {
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon-species/" + pokemon + "/", true);
   xhttp.send();
 }
-<<<<<<< HEAD
-// >>>>>>> 20e79df4ad450ec4d3c4ec6ca8ae5eac25dce6a3
-=======
->>>>>>> 33fd0430bc54a91fb66be67b7151fa1d1a234fe7
->>>>>>> ee8df71a45cfa175db97e72fa1e1488721b3220a
+
+var Bason = new Trainer();
+document.getElementsByClassName('remove')[0].addEventListener('click',removePokemon);
+getPokemon(1);
+getPokemon(2);
+getPokemon(3);
