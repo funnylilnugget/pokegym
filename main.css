@@ -4,6 +4,11 @@ body{
   height: 1000px;
 }
 
+.trainerText {
+  font-family: VT323;
+  margin-left: 45px;
+}
+
 /* <<<<<<< HEAD
 ======= */
 .enter {
