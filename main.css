@@ -16,11 +16,13 @@ text-align: center;
 }
 
 .modal-body {
+  font-size: 25px;
  background-image: url("image/pokebackground.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 800px;
   border-radius: 30%;
+  height: 900px;
 }
 
 ul{
@@ -28,6 +30,9 @@ ul{
 
 }
 
+#stats{
+  font-family: VT323;
+}
 .pokeball1{
   height: 40px;
   width: auto;
