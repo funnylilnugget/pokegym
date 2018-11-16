@@ -98,6 +98,17 @@ ul{
     color:green;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+/*
+=======
+}
+
+>>>>>>> styling */
+>>>>>>> b25de501f5a6eb45cb8aa22840afeb734abb186e
 @keyframes shake{
   0% {
     transform:  translate(0px,0px)  ;
