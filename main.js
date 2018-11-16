@@ -1,18 +1,27 @@
+// trainer: Bonny
 var pokemon1 = 708;
 var pokemon2 = 330;
 var pokemon3 = 718;
-var pokemon4 = 345;
-var pokemon5 = 545;
-var pokemon6 = 64;
+
+// trainer: Keri
+var pokemon4 = 144;
+var pokemon5 = 131;
+var pokemon6 = 130;
+
+// trainer: Kenny
 var pokemon7 = 381;
 var pokemon8 = 257;
 var pokemon9 = 282;
+
+// trainer: Jason
 var pokemon10= 133;
 var pokemon11 = 132;
 var pokemon12= 6;
+
+// trainer: Chris
 var pokemon13 = 356;
 var pokemon14 = 94;
-var pokemon15= 282;
+var pokemon15= 93;
 // var pokemon1 = [];
 
 
@@ -107,7 +116,7 @@ function pokeInf (pokemon) {
 }
 
 var trainer = new Trainer ("Bonny", pokemon1, pokemon2, pokemon3);
-var trainer2 = new Trainer("keiry", pokemon4, pokemon5, pokemon6);
+var trainer2 = new Trainer("keri", pokemon4, pokemon5, pokemon6);
 var trainer3 = new Trainer("kenny", pokemon7, pokemon8, pokemon9);
 var trainer4 = new Trainer("jason", pokemon10, pokemon11, pokemon12);
 var trainer5 = new Trainer("chris", pokemon13, pokemon14, pokemon15);
