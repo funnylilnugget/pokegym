@@ -50,6 +50,39 @@ ul{
   padding-top: 8px;
 }
 
+/* ALL THINGS FOOTER */
+
+#footcol:link {
+  color: rgb(69, 165, 184);
+}
+
+#footcol:visited {
+    color: rgb(62, 255, 220);
+}
+
+#footcol:hover {
+    color: rgb(244, 178, 252);
+}
+
+
+#footcol:active {
+    color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes shake{
@@ -146,5 +179,13 @@ ul{
 }
 
 footer {
-  font-size: 10px;
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;;
+    background-color: rgb(0, 56, 255);
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
 }
